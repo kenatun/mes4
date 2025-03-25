@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feliz 4 Meses, Amor 💖</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ffe6e6, #ffd6ff);
+      color: #333;
+      text-align: center;
+      padding: 20px;
+    }
+    h1 {
+      margin-top: 20px;
+      font-size: 2.5rem;
+      color: #d63384;
+    }
+    p {
+      font-size: 1.2rem;
+      margin: 10px 0 30px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+    .gallery img {
+      width: 250px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .counter {
+      font-size: 1.5rem;
+      margin-top: 30px;
+      color: #c2185b;
+    }
+    footer {
+      margin-top: 40px;
+      font-size: 1rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Feliz 4 Meses, Mi Amor 💕</h1>
+  <p><em>"Amarte ha sido mi aventura favorita, y cada día contigo es el capítulo más hermoso de mi vida."</em></p>
+  <p>Gracias por estos 4 meses maravillosos a tu lado. Cada momento contigo es un regalo que atesoro siempre.</p>
+
+  <div class="gallery">
+    <img src="src/1.jpeg" alt="Momentos juntos">
+    <img src="src/2.jpeg" alt="Risa y amor">
+    <img src="src/3.jpeg" alt="Nuestro día especial">
+  </div>
+
+
+  <footer>
+    Hecho con mucho amor por Kenyiyo 💌
+  </footer>
+
+  <script>
+    // Fecha en que comenzaron su relación
+    const startDate = new Date("2024-11-25");
+    const today = new Date();
+    const diffTime = today - startDate;
+    const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+    document.getElementById("daysTogether").textContent = diffDays;
+  </script>
+
+</body>
+</html>
